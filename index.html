@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PRUEBA - BASE DE DATOS</title>
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <section class="contenedor">
+        <div class="title">
+            <h1>Formulario de Registro</h1>
+        </div>
+        <form action="php/main.php" method="POST">
+            <label for="nombre" class="title">Nombre :</label>
+            <input type="text" name="nombre" id="nombre" >
+
+            <label for="apellido" class="title">Apellido :</label>
+            <input type="text" name="apellido" id="apellido">
+
+            <label for="cedula" class="title">Cedula :</label>
+            <input type="text" name="cedula" id="cedula">
+
+            <label for="correo" class="title">Correo :</label>
+            <input type="email" name="correo" id="correo">
+
+            <label for="lenguajes" class="title">Lenguajes :</label>
+            <textarea name="lenguajes" id="lenguajes" cols="30" rows="10"></textarea>
+
+            <input type="submit" class="title" value="Enviar">
+        </form>
+    </section>
+</body>
+</html>

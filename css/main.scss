@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+    transition: all .3s ease;
+}
+
+$color1: #f6f5f5;
+$color2: #145374;
+$color3: #00334e;
+$color4: #ee6f57;
+
+@mixin mx_display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, .title{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background: $color1;
+
+    @include mx_display();
+}
+
+.contenedor{
+    $size: 500px;
+    width: $size;
+    padding: 30px;
+    background: $color2;
+    border-radius: 6px;
+
+    .title{
+        color: $color1;
+        font-size: 1.3em;
+        margin-bottom: 10px;
+    }
+
+    form{
+        label{
+            color: #fff;
+
+            &.title{
+                font-size: 1em;
+                font-weight: 800;
+            }
+        }
+
+        input[type="text"], input[type="email"], textarea{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+            font-family: "Google sans";
+
+            border: none;
+            padding: 5px;
+            border-radius: 2px;
+
+            &:focus,&:hover{
+                background: rgba(#fff, .9);
+            }
+        }
+
+        textarea{
+            max-width: $size - 60px;
+            max-height: 200px;
+            text-transform: uppercase;
+
+        }
+        input[type="submit"]{
+            width: 100%;
+            padding: 10px;
+            border: none;
+            margin: 20px 0 0;
+
+            background: $color4;
+            color: $color1;
+            border-radius: 5px;
+            cursor: pointer;
+
+            &:hover{
+                background: ligthen($color4 10%);
+            }
+        }
+    }
+}

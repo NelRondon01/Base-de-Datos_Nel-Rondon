@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  transition: all 0.3s ease;
+}
+
+h1, .title {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: #f6f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contenedor {
+  width: 500px;
+  padding: 30px;
+  background: #145374;
+  border-radius: 6px;
+}
+.contenedor .title {
+  color: #f6f5f5;
+  font-size: 1.3em;
+  margin-bottom: 10px;
+}
+.contenedor form label {
+  color: #fff;
+}
+.contenedor form label.title {
+  font-size: 1em;
+  font-weight: 800;
+}
+.contenedor form input[type=text], .contenedor form input[type=email], .contenedor form textarea {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  font-family: "Google sans";
+  border: none;
+  padding: 5px;
+  border-radius: 2px;
+}
+.contenedor form input[type=text]:focus, .contenedor form input[type=text]:hover, .contenedor form input[type=email]:focus, .contenedor form input[type=email]:hover, .contenedor form textarea:focus, .contenedor form textarea:hover {
+  background: rgba(255, 255, 255, 0.9);
+}
+.contenedor form textarea {
+  max-width: 440px;
+  max-height: 200px;
+  text-transform: uppercase;
+}
+.contenedor form input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  margin: 20px 0 0;
+  background: #ee6f57;
+  color: #f6f5f5;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contenedor form input[type=submit]:hover {
+  background: ligthen(#ee6f57 10%);
+}
